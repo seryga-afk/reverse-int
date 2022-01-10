@@ -1,4 +1,6 @@
-module.exports = function reverse (n) {
-    n = parseInt((String(n).split('').reverse().join('')))
-    return n
+
+function reverse() {
+    let number = document.querySelector('#inp').value;
+    number = parseInt((String(number).split('').reverse().join('')))
+    document.querySelector('.result').innerHTML = number;
 }
